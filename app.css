@@ -1,0 +1,224 @@
+body {
+    /* background: url(images/bg-pattern-top-desktop.svg) no-repeat; */
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 10%;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    height: 100%;
+}
+
+.container-top {
+    display: flex;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-top .head .topic {
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.subTopic {
+    color: hsl(303, 10%, 53%);
+    font-weight: 400;
+    line-height: 25px;
+    width: 400px;
+    max-width: 400px;
+}
+
+.head {
+    /* border: 5px solid sandybrown; */
+    width: 30%;
+}
+
+h1 {
+    margin: 0 0;
+    line-height: 50px;
+}
+
+.ratedContainer {
+    /* border: 5px solid chartreuse; */
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: flex-end;
+}
+
+.ratedContainer .rated {
+    height: 20%;
+    margin: 5px 5px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    width: 50%;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    position: relative;
+}
+
+.star {
+    margin: 0 30px;
+}
+
+.rated:nth-of-type(1) {
+    right: 14%;
+}
+
+.rated:nth-of-type(2) {
+    right: 7%;
+}
+
+.rated:nth-of-type(3) {
+    right: 0%;
+}
+
+.rated div {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.container-bot {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    box-sizing: border-box;
+    /* border: 5px solid aquamarine; */
+}
+
+.commentBox {
+    color: hsl(300, 24%, 96%);
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    max-width: 26%;
+    height: 50%;
+    padding: 2rem;
+    position: relative;
+}
+
+#Irene {
+    top: 4.5%;
+}
+
+#Anne {
+    top: 9%;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.profile {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile p {
+    margin: 5px 20px;
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+    opacity: 75%;
+    font-weight: 200;
+}
+
+.profile p:nth-of-type(1) {
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.comment {
+    color: hsl(300, 24%, 96%);
+}
+
+@media (max-width:376px) {
+
+    body{
+        margin: 25% 11%;
+        background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left top, right bottom;
+    }
+
+    .container-top {
+        flex-direction: column;
+    }
+
+    .container-top .head {
+        width: 100%;
+    }
+
+    .container-top .head .topic{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        text-align: center;
+        line-height: 2.5rem;
+        margin-bottom: 0.25em;
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+    }
+
+    .container-top .head .subTopic {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ratedContainer {
+        margin: 15px 0;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ratedContainer .rated {
+        position: static;
+        width: 100%;
+        height: 25%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container-bot {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .commentBox {
+        position: static;
+        max-width: 100%;
+        height: 25%;
+        padding: 1.5rem 1.8rem;
+        font-size: 14px;
+    }
+
+    .comment{
+        line-height: 20px;
+    }
+
+}
