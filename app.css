@@ -13,11 +13,6 @@ body {
     height: 100%;
 }
 
-img{
-    width: 20px;
-    height: 20px;
-}
-
 .container-top {
     display: flex;
     height: auto;
